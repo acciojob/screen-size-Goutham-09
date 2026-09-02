@@ -2,8 +2,11 @@
 //your JS code here. If required.
 sizeInfo = document.getElementById("sizeInfo").children[0]
 
-window.addEventListener("resize",function updatesize() {
+function updateSize(){
 	sizeInfo.textContent = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`
-})
-updatesize()
+}
+
+window.addEventListener("resize",updateSize)
+updateSize()
+
 

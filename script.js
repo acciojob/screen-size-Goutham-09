@@ -1,12 +1,10 @@
-//your JS code here. If required.
-//your JS code here. If required.
-sizeInfo = document.getElementById("sizeInfo").children[0]
+const sizeInfo = document.getElementById("sizeInfo");
+const heading = sizeInfo.querySelector("h1");
 
-function updateSize(){
-	sizeInfo.textContent = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`
+function updateSize() {
+    heading.textContent = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
 }
 
-window.addEventListener("resize",updateSize)
-updateSize()
+window.addEventListener("resize", updateSize);
 
-
+updateSize();

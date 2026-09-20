@@ -1,10 +1,11 @@
-const sizeInfo = document.getElementById("sizeInfo");
-const heading = sizeInfo.querySelector("h1");
+const size = document.getElementById("size");
 
-function updateSize() {
-    heading.textContent = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
-}
+        function updateSize() {
+            size.textContent = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
+        }
 
-window.addEventListener("resize", updateSize);
+       
+        updateSize();
 
-updateSize();
+       
+        window.addEventListener("resize", updateSize);
